@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        #wrap {
+            width: 100%;
+            background: #ede7f6;
+        }
+        #main {
+            overflow: hidden;
+            width: 1200px;
+            margin: 0 auto; 
+        }
+        header {
+            width: 100%;
+            height: 200px;
+            background: #c5cae9;
+        }
+        .clearfix::after {
+            content: '';
+            display:block;
+            clear: both;
+        }
+        aside {
+            float: left;
+            width: 30%;
+            height: 600px;
+            background: #9fa8da;
+        }
+        section {
+            float: left;
+            width: 70%;
+            height: 600px;
+            background: #7986cb;
+        }
+        footer {
+            width: 100%;
+            height: 200px;
+            background: #5c6bc0;
+            clear: both;
+        }
+        /* 화면 너비 0 ~ 1200px */
+        @media (max-width: 1220px) {
+            #main {width: 90%}
+        }
+        @media (max-width: 900px) {
+            #main {width: 100%}
+        }
+        @media (max-width: 600px) {
+            section {float: none; width: 100%; height: 300px;}
+            aside {float: none; width: 100%; height: 300px;}
+        }
+    </style>
+<body>
+    <div id="wrap">
+        <main id="main" class="clearfix">
+            <header></header>
+            <aside></aside>
+            <section></section>
+            <footer></footer>
+        </main>
+    </div>
+    
+</body>
+</html>

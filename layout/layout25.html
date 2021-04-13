@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        #warp {}
+        #main {
+            width: 1200px;
+            margin: 0 auto;
+        }
+        header{
+            height: 100px;
+            background: #999;
+        }
+        .banner{
+            height: 100px;
+            background: #888;
+        }
+        .cont1{
+            background: #777;
+            overflow: hidden;
+        }
+
+        .cont1 .cont1-1{
+            width: 30%;
+            height: 400px;
+            background: #666;
+            float: left;
+        }
+        .cont1 .cont1-2{
+            width: 70%;
+            height: 200px;
+            background: #555;
+            float: left;
+        }
+        .cont1 .cont1-3{
+            width: 70%;
+            height: 200px;
+            background: #444;
+            float: left;
+        }
+
+        .cont2{
+            background: #333;
+            overflow: hidden;
+        }
+
+        .cont2 .cont2-1{
+            width: 33.333%;
+            height: 200px;
+            background: #888;
+            float: left;
+        }
+
+        .cont2 .cont2-2{
+            width: 33.333%;
+            height: 200px;
+            background: #777;
+            float: left;
+        }
+
+        .cont2 .cont2-3{
+            width: 33.333%;
+            height: 200px;
+            background: #666;
+            float: left;
+        }
+
+        .cont3{
+            height: 200px;
+            background: #999;
+
+        }
+
+        .cont3 .cont3-1{
+            width: 23%;
+            margin: 1%;
+            height: 180px;
+            background: #000;
+            float: left;
+            border-radius: 20px;
+        }
+
+        footer{
+            height: 100px;
+            background: #777;
+            clear: both;
+        }
+
+        @media(max-width: 1220px){
+            #main{width: 100%;}
+
+            .cont2 .cont2-1{
+                width: 50%;
+            }
+
+            .cont2 .cont2-2{
+                width: 50%;
+            }
+
+            .cont2 .cont2-3{
+                display: none;
+            }
+
+            .cont3 .cont3-1{
+                width: 29%;
+                margin: 2%;
+                height: 150px;
+            }
+
+            .cont3 .cont3-1:last-child{
+                display: none;
+            }
+        }
+        @media(max-width: 780px) {
+            .cont2 .cont2-1{
+                width: 100%;
+            }
+
+            .cont2 .cont2-2{
+                width: 100%;
+            }
+        }
+        @media(max-width: 500px) {
+            .cont2 .cont2-1{
+            width: 100%;
+        }
+
+        .cont2 .cont2-2{
+            width: 100%;
+        }
+
+        .cont2 .cont2-3{
+            width: 100%;
+        }
+        .cont3 .cont3-1{
+            width: 75%;
+            margin: 2% auto;
+            margin-left: 10%;
+            height: 30%
+        }
+        
+        .cont3 {
+            width: 100%;
+            height: 600px;
+
+        }
+
+        }
+
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <main id="main">
+            <header></header>
+            <aside class="banner"></aside>
+            <section class="cont1">
+                <article class="cont1-1"></article>
+                <article class="cont1-2"></article>
+                <article class="cont1-3"></article>
+            </section>
+            <section class="cont2">
+                <article class="cont2-1"></article>
+                <article class="cont2-2"></article>
+                <article class="cont2-3"></article>
+            </section>
+            <section class="cont3">
+                <article class="cont3-1"></article>
+                <article class="cont3-1"></article>
+                <article class="cont3-1"></article>
+                <article class="cont3-1"></article>
+            </section>
+            <footer></footer>
+        </main>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>네이버 인플루언서</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        li {
+            list-style: none;
+            display: inline;
+        }
+        #wrap {}
+        #header {
+            height: 80px;
+            background-color: #999;
+        }
+        .head1 {
+            position: relative;
+            width: 1200px;
+            height: inherit;
+            margin: 0 auto;
+            background: #ccc;
+        }
+        .head1 img {
+            width: 40px;
+            height: 40px;
+            padding: 12px;
+        }
+        .head1 .logo {}
+        .head1 .logo span {
+            position: absolute;
+            left: 60px; top: 10px;
+            font-weight: bold;
+
+        }
+        .head1 ul {
+            position: absolute;
+            left: 30%;
+            top: 25%;
+            text-align: center;
+        }
+        .head1 ul li {
+            font-size: 12px;
+            padding: 20px;
+        }
+        
+        .head1 .log {
+            font-size: 12px;
+            position: absolute;
+            right: 15px;
+            top: 20px;
+            border: 1px solid #999;
+            border-radius: 15px;
+            padding: 5px;
+        }
+        #banner {
+            height: 500px;
+            background: url(img/banner-bg2.png) no-repeat center center;
+            background-size: cover;
+        }
+        .ban1 {
+            width: 1200px;
+            height: inherit;
+            margin: 0 auto;
+            color: #fff;
+        }
+        .ban1 > div:first-child {
+            font-size: 10px;
+            text-align: center;
+            padding-top: 100px;
+        }
+        .ban1 > div:last-child {
+            margin-top: 30px;
+            text-align: center;
+            font-size: 30px;
+        }
+        #content {
+            height: 1200px;
+            margin: 0 auto;
+            background: #999;
+        }
+
+        .content2 {
+            width: 1200px;
+            height: inherit;
+            margin: 0 auto;
+            background: rgb(255, 232, 232);
+        }
+        .cont1 {
+            width: 1200px;
+            height: 600px;
+            margin: 0 auto;
+        }
+        .cont1 .new {
+            text-align: center;
+            padding-top: 50px;
+            text-transform: uppercase;
+        }
+        .cont1 .new span {
+            background: #ccc;
+            border-radius: 15px;
+            padding: 5px 10px;
+        }
+        .cont1 > div:nth-child(2) {
+            margin-top: 20px;
+            font-size: 25px;
+            font-weight: bold;
+            text-align: center;
+            
+        }
+        .cont1 img {
+            width: 600px;
+            height: 400px;
+            transform: translate(50%, 10%);
+        }
+        .cont2 {
+            width: 1200px;
+            height: 100px;
+            margin: 0 auto;
+        }
+        .cont2 > div {
+            text-align: center;
+            font-size: 12px;
+        }
+        .cont3 {
+            width: 1200px;
+            height: 500px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        .cont3 .box1 {
+            width: 500px;
+            height: 200px;
+            border-radius: 20px;
+            background: #0288d1;
+            float: left;
+            margin: 20px;
+            position: relative;
+            overflow: hidden;
+        }
+        .cont3 .box1 img {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            right: -20px;
+            bottom: -50px;
+        }
+        .cont3 .box2 {
+            width: 600px;
+            height: 440px;
+            border-radius: 20px;
+            background: #0288d1;
+            float: right;
+            margin: 20px;
+            position: relative;
+        }
+        .cont3 .box2 img {
+            width: 80%;
+            position: absolute;
+            right: 50px;
+            bottom: 0;
+        }
+        
+        .cont3 .box3 {
+            width: 500px;
+            height: 200px;
+            border-radius: 20px;
+            background: #0288d1;
+            float: left;
+            margin: 20px;
+            position: relative;
+            overflow: hidden;
+        }
+        .cont3 .box3 img {
+            width: 200px;
+            height: 150px;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+
+        }
+        .cont3 .target {
+            padding: 10px 22px;
+            color: #fff;
+            opacity: 80%;
+        }
+        .cont3 .info {
+            margin-left: 20px;
+            color: #fff;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .cont3 .more {
+            margin-top: 30px;
+            margin-left: 20px;
+            color: #fff;
+        }
+        .cont3 img {
+            
+        }
+        #footer {
+            height: 235px;
+            background: #000;
+        }
+        .fot1 {
+            width: 1200px;
+            height: inherit;
+            background: #000;
+            margin: 0 auto;
+            color: #fff;
+            text-align: center;
+        }
+        .fot1 .top {
+            font-size: 10px;
+            opacity: 0.8;
+            
+            padding-top: 20px;
+        }
+        .fot1 .log2 {
+            margin-top: 55px;
+        }
+        .fot1 .log2 span {
+            background: rgb(122, 122, 122);
+            border-radius: 5px;
+            padding: 3px 10px;
+        }
+        .fot1 .mark {
+            margin-top: 59px;
+            opacity: 0.6;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div id="header">
+            <div class="head1">
+                <img src="https://ncreatorsnext.pstatic.net/img/logo.a61f5142308413b313275c691aa13c9a.gif" alt="" width="30" class="PcGnb__image_logo___100z7">
+                <div class="logo"><span>NAVER<br>INFLUENCER CENTER</span></div>
+                    <ul>
+                        <li>인플루언서 안내</li>
+                        <li>광고수익 혜택</li>
+                        <li>성장 지원 프로그램</li>
+                        <li>브랜드커넥트</li>
+                        <li>공지</li>
+                    </ul>
+                <div class="log">인플루언서 로그인</div>
+                </div>
+            </div>
+        </div>
+        <div id="banner">
+            <div class="ban1">
+                <div>광고수익 혜택</div>
+                <div>인플루언서의 수익을 더 높여줄<br>특별한 광고가 제공됩니다.</div>
+            </div>
+        </div>
+        <div id="content">
+            <div class="content2">
+                <div class="cont1">
+                    <div class="new"><span>new</span></div>
+                    <div>더 커진 수익과 효과적인 노출<br>새롭고 강력한 헤드뷰 광고를 선보입니다.</div>
+                    <img src="img/content-img1.png" alt="컨텐츠1">
+                </div>
+                <div class="cont2">
+                    <div>
+                        새로운 헤드뷰 광고 상품은 콘텐츠에 방해되지 않으면서도<br>
+                        뛰어난 노출과 수익을 제공하는 신규 광고입니다. <br>
+                        네이버에서 적극적인 창작 활동을 통해 더 좋아진 혜택을 경험해 보세요.
+                    </div>
+                </div>
+                <div class="cont3">
+                    <div class="box1">
+                        <p class="target">인플루언서 대상</p>
+                        <p class="info">인플루언서 홈 영역에<br>일반 광고 제공</p>
+                        <p class="more">자세히 알아보기 &rarr; </p>
+                        <img src="img/cont2-img2.png" alt="컨텐츠2-2">
+                    </div>
+                    <div class="box2">
+                        <p class="target">우수 인플루언서 대상</p>
+                        <p class="info">다양한 브랜드와 연결될 수 있는<br>브랜드 커넥트 제공</p>
+                        <p class="more">자세히 알아보기 &rarr; </p>
+                        <img src="img/cont2-img3.png" alt="컨텐츠2-1">
+                    </div>
+                    <div class="box3">
+                        <p class="target">상위 인플루언서 대상</p>
+                        <p class="info">더 높은 수익의<br>프리미엄 광고 제공</p>
+                        <p class="more">자세히 알아보기 &rarr; </p>
+                        <img src="img/cont2-img1.png" alt="컨텐츠2-3">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <div class="fot1">
+                <div class="top">TOP &uarr; </div>
+                <div class="log2"><span>로그인</span></div>
+                <div class="mark">NAVER</div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

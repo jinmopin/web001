@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Effect01 - jQuery</title>
+    
+    <link rel="stylesheet" href="skin/prism.css">
+
+    <style>
+        @font-face {
+            font-family: 'NEXON Lv1 Gothic OTF';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'TmonMonsori';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/TmonMonsori.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        ul {
+            list-style: none;
+        }
+        a {
+            text-decoration: none;
+        }
+        #wrap {
+            margin: 3vh;
+            height: 94vh;
+            border: 8px solid #0E43F1;
+            border-radius: 20px;
+        }
+        #contents {
+            border: 8px solid #50B5F9;
+            height: 100%;
+            border-radius: 12px;
+            font-family: 'TmonMonsori';
+            color: #0E43F1;
+            padding: 3vw;
+            overflow: hidden;
+        }
+        #header {
+            border-bottom: 1px solid #0e43f1;
+            display: flex;
+            justify-content: space-between;
+        }
+        #header h1 {
+            padding-bottom: 30px;
+        }
+        #header h1 a {
+            color: #0e43f1;
+            font-size: 90px;
+            line-height: 1.1;
+        }
+        #header h1 em {
+            font-family: 'NEXON Lv1 Gothic OTF';
+            font-style: normal;
+            font-size: 20px;
+            text-transform: uppercase;
+            vertical-align: -15px;
+        }
+        #header .nav {}
+        #header .nav li {
+            display: inline;
+        }
+        #header .nav li a {
+            font-family: 'NEXON Lv1 Gothic OTF';
+            border: 1px dashed #0e43f1;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            display: inline-block;
+            border-radius: 50%;
+            font-size: 14px;
+            margin-bottom: 2px;
+        }
+        #header .nav li.active a {
+            background: #0e43f1;
+            color: #fff;
+        }
+        #header .nav li a.active {
+            border-style: solid;
+        }
+        .content {
+            display: flex;
+            padding-top: 62px;
+            justify-content: space-between;
+            flex-wrap: nowrap
+            
+        }
+        .content .sample {
+            width: 60%;
+            height: 600px;
+            background: #c0ebfd;
+            border-radius: 10px;
+            position: relative;
+        }
+        .content .code {
+            flex-basis: 35%;
+            background: #f1f1f1;
+            border-radius: 10px;
+        }
+        /* option */
+        @font-face {
+            font-family: 'Eulyoo1945-SemiBold';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2102-01@1.0/Eulyoo1945-SemiBold.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        #tab-menu {
+            font-family: 'Eulyoo1945-SemiBold';
+            max-width: 600px;
+            background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            position: absolute;
+            left: 50%;
+            top: 20vh;
+            transform: translate(-50%);
+            border-radius: 5px;
+        }
+        #tab-btn ul {
+            display: flex;
+        }
+        #tab-btn li {
+            list-style: none;
+            text-align: center;
+            flex-basis: 20%;
+        }
+        #tab-btn li a {
+            text-decoration: none;
+            color: #fff;
+            padding: 1.5em 1.5em 1em 1.5em;
+            display: block;
+        }
+
+        #tab-btn li.active a {
+            border-bottom: 3px solid #311b92;
+            color: #311b92;
+        }
+
+        #tab-cont {
+            background-color: #fff;
+            color: #000;
+            padding: 1.5em;
+            border-radius: 0 0 5px 5px;
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+        #tab-cont > div {
+            display: none;
+        }
+        #tab-cont > div:nth-child(1) {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <main id="contents">
+            <header id="header">
+                <h1><a href="menuEffect-cover.html">탭 메뉴</a> <em>jQuery</em></h1>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="menuEffect01-javascript.html" title="메뉴 이펙트 자바스크립트01">1</a></li>
+                        <li><a href="menuEffect02-javascript.html" title="메뉴 이펙트 자바스크립트02">2</a></li>
+                        <li><a href="menuEffect03-javascript.html" title="메뉴 이펙트 자바스크립트03">3</a></li>
+                        <li><a href="menuEffect04-javascript.html" title="메뉴 이펙트 자바스크립트04">4</a></li>
+                        <li><a href="menuEffect05-javascript.html" title="메뉴 이펙트 자바스크립트05">5</a></li>
+                        <li><a href="menuEffect06-javascript.html" title="메뉴 이펙트 자바스크립트06">6</a></li>
+                        <li><a href="menuEffect07-javascript.html" title="메뉴 이펙트 자바스크립트07">7</a></li>
+                        <li><a href="menuEffect08-javascript.html" title="메뉴 이펙트 자바스크립트08">8</a></li>
+                        <li><a href="menuEffect09-javascript.html" title="메뉴 이펙트 자바스크립트09">9</a></li>
+                        <li><a href="menuEffect10-javascript.html" title="메뉴 이펙트 자바스크립트10">10</a></li>
+                    </ul>
+                    <ul>
+                        <li class="active"><a href="menuEffect01-jquery.html" title="메뉴 이펙트 제이쿼리01">1</a></li>
+                        <li><a href="menuEffect02-jquery.html" title="메뉴 이펙트 제이쿼리02">2</a></li>
+                        <li><a href="menuEffect03-jquery.html" title="메뉴 이펙트 제이쿼리03">3</a></li>
+                        <li><a href="menuEffect04-jquery.html" title="메뉴 이펙트 제이쿼리04">4</a></li>
+                        <li><a href="menuEffect05-jquery.html" title="메뉴 이펙트 제이쿼리05">5</a></li>
+                        <li><a href="menuEffect06-jquery.html" title="메뉴 이펙트 제이쿼리06">6</a></li>
+                        <li><a href="menuEffect07-jquery.html" title="메뉴 이펙트 제이쿼리07">7</a></li>
+                        <li><a href="menuEffect08-jquery.html" title="메뉴 이펙트 제이쿼리08">8</a></li>
+                        <li><a href="menuEffect09-jquery.html" title="메뉴 이펙트 제이쿼리09">9</a></li>
+                        <li><a href="menuEffect10-jquery.html" title="메뉴 이펙트 제이쿼리10">10</a></li>
+                    </ul>  
+                </nav>
+            </header>
+            <section class="content">
+                <div class="sample">
+                    <div id="tab-menu">
+                        <div id="tab-btn">
+                            <ul>
+                                <li class="active"><a href="#">Tab1</a></li>
+                                <li><a href="#">Tab2</a></li>
+                                <li><a href="#">Tab3</a></li>
+                                <li><a href="#">Tab4</a></li>
+                                <li><a href="#">Tab5</a></li>
+                            </ul>
+                            </div>
+                            <div id="tab-cont">
+                            <div>1. 이집트 수에즈 운하에서 좌초한 대만계 대형 컨테이너선 ‘에버 기븐’이 좌초 6일 만인 29일(현지시각) 다시 물에 떴으나, 커피부터 석유까지 각종 화물의 운송 차질은 몇 주 이상 계속될 것이라는 우려가 나오고 있다.</div>
+                            <div>2. 수에즈운하관리청(SCA)은 이날 새벽 좌초한 컨테이너선을 움직여 물에 띄우는 작업이 이뤄졌다고 밝혔다. 하지만, 운하 통행을 기다리고 있는 선박이 약 450척에 달해 통행이 언제 완전 정상화될지는 아직 불확실하다고 <블룸버그> 통신이 전했다. 대기 선박 가운데는 곡물이나 광물 등을 포장하지 않은 채 쌓아 운반하는 산적 화물선(벌크선)이 90척으로 가장 많고, 컨테이너선도 82척에 이른다.</div>
+                            <div>3. 전문가들은 대기중인 배에 실린 화물이 최대 96억달러(약 10조5천억원) 어치에 달하고 화물도 농산물부터 기계 부품, 석유 제품까지 다양해 전세계 산업계가 겪을 공급 지연 여파가 만만치 않을 것으로 보고 있다.</div>
+                            <div>4. 이번 사고에 따른 운하 통행료 수입 피해 규모는 하루 1500만달러(약 165억원) 수준이며, 수에즈 운하 대신 아프리카 대륙 우회 항로를 이용하는 화물선들의 추가 비용이나 화물 수송 지연에 따른 영향까지 고려하면 전체 피해는 눈덩이처럼 불어날 수 있다. 독일계 보험사 알리안츠의 추산에 따르면, 수에즈 운하 봉쇄로 차질을 빚을 국제 무역 규모는 일주일에 100억달러(약 11조원)에 달한다고 월스트리트 저널이 전했다.</div>
+                            <div>5. 또 다른 문제는 수에즈 운하가 정상화된 이후 각 지역 항구로 한꺼번에 몰려드는 화물선들을 제때 처리하기 어렵다는 점이다. 이 때문에 지난해 코로나19 대확산 이후 급등한 해상 운임이 다시 상승할 것이라는 전망이 나오고 있다. 중국과 유럽간 컨테이너 운송비는 지난 한해 사이에 거의 4배나 뛴 바 있다고 로이터 통신이 전했다. </div>
+                            </div>
+                        </div>
+                    </div>
+                <div class="code">
+<pre class="language-js"><code>const tabBtn = $("#tab-btn > ul > li");   
+//각각의 버튼을 상수에 저장
+const tabcont = $("#tab-cont > div");   
+//각각의 콘텐츠를 상수에 저장
+tabBtn.click(function(){
+let target = $(this);   
+// target - 응답을 받을 위치, this - 이것
+let index = target.index(); 
+// 선언될 index = target으로 지정된 index
+tabBtn.removeClass("active");   
+// 이전의 액티브 상태를 제거.
+target.addClass("active");  
+// 새로이 액티브 상태를 부여.
+tabcont.css("display","none");  
+// 기존의 콘텐츠를 보이지 않게
+tabcont.eq(index).css("display","block");   
+// 지정된 index 콘텐츠 활성화
+});
+</code></pre>
+                </div>
+
+            </section>
+        </main>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="skin/prism.js"></script>
+    
+    <script>
+
+        const tabBtn = $("#tab-btn > ul > li");
+        const tabcont = $("#tab-cont > div");
+        tabBtn.click(function(){
+            let target = $(this);
+            let index = target.index();
+            tabBtn.removeClass("active");
+            target.addClass("active");
+            tabcont.css("display","none");
+            tabcont.eq(index).css("display","block");
+        });
+    </script>
+</body>
+</html>

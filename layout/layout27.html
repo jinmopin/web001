@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAVER INFLUENCER 2</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style: none;
+            display: inline-block;
+        }
+
+        #wrap {}
+
+        #header {
+            width: 1600px;
+            margin: 0 auto;
+        }
+
+        #header .container {
+            height: 100px;
+            position: relative;
+            position: relative;
+        }
+
+        #header .container img {
+            position: absolute;
+            top: 20px;
+            left: 60px;
+        }
+
+        #header .container .logo {
+            padding-top: 10px;
+            padding-left: 60px;
+            width: 20%;
+            height: 100px;
+            float: left;
+            font-weight: bold;
+        }
+
+        #header .container ul {
+            width: 60%;
+            text-align: center;
+            margin-left: 10%;
+            padding-top: 1.5%;
+            padding-left: 8%;
+        }
+
+        #header .container li {
+            margin: 1.5%;
+        }
+
+        #header .container .log {
+            width: 20%
+        }
+
+        #header .container .log>div {
+            display: inline-block;
+            font-size: 12px;
+            width: 150px;
+            height: 20px;
+            text-align: center;
+            padding: 7px 7px;
+            border-radius: 35px;
+            border: 1px solid #000;
+            position: absolute;
+            top: 35%;
+            right: 5%;
+        }
+
+        #nav {
+            width: 100%;
+            height: 50px;
+            border-top: 1px solid #ccc;
+            background: rgb(248, 249, 252);
+            margin: 0 auto;
+        }
+
+        #nav ul {
+            text-align: center;
+            margin-right: 28%;
+            margin-bottom: 5px;
+        }
+
+        #nav ul li {
+            font-size: 14px;
+            margin: 1%;
+        }
+
+        #banner {
+            width: 100%;
+            height: 700px;
+            background: url(img/banner-bg2.png) no-repeat center center;
+            background-size: cover;
+            margin: 0 auto;
+            text-align: center;
+            color: #fff;
+        }
+
+        #banner .banner-m {
+            font-size: 30px;
+            padding-bottom: 30px;
+        }
+
+        #banner .banner-s {
+            font-size: 18px;
+            padding-top: 10px;
+            opacity: 80%;
+        }
+
+        #banner .banner-c {
+            font-size: 18px;
+            display: inline-block;
+            margin-top: 50px;
+            padding: 15px 60px;
+            border-radius: 35px;
+            background: #fff;
+            color: blue;
+            text-align: center;
+            font-weight: bold;
+
+        }
+
+        #banner p {
+            padding-top: 90px;
+            padding-bottom: 50px;
+            opacity: 80%;
+            position: relative;
+        }
+
+        #banner p::after {
+            content: '';
+            position: absolute;
+            left: 898px;
+            bottom: 38px;
+            width: 110px;
+            height: 1px;
+            background: #fff;
+            border: 1px solid #fff;
+            border-radius: 30px;
+            opacity: 80%;
+            z-index: -1;
+        }
+
+        #banner .banner-y {
+            margin-top: 20px;
+            opacity: 80%;
+
+        }
+
+        #contents {
+            width: 100%;
+            height: 6
+            00px;
+            background: rgb(241, 250, 253);
+        }
+
+        #contents .continner {
+            width: 1600px;
+            height: inherit;
+            background: rgb(241, 250, 253);
+            position: relative;
+            margin: 0 auto;
+            overflow: hidden;
+            
+        }
+
+        #contents .continner .img1 {
+            padding-top: 8%;
+            padding-left: 15%;
+            float: left;
+        }
+        #contents .continner .m-box {
+            background: #999;
+            width: 700px;
+            height: 500px;
+            float: left;
+            padding-top: 7.5%;
+        }
+        #contents .continner .box {
+            width: 400px;
+            height: 100px;
+            border-radius: 10px;
+            background: #fff;
+            margin: 3%;
+            overflow: hidden;
+            position: relative;
+        }
+        #contents .continner .box strong {
+            position: relative;
+        }
+        #contents .continner .box strong::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: #000;
+            border: 1px solid blue;
+        }
+        #contents .continner .box .blue {
+            position: absolute;
+            top: 35px;
+            right: 25px;
+            text-align: center;
+            color: rgb(48, 48, 161);
+            font-weight: bold;
+            border-bottom: none;
+        }
+        #contents .continner .box > div {
+            margin-top: 28px;
+            margin-left: 20px;
+            float: left;
+        }
+        #footer {
+            width: 100%;
+            height: 300px;
+            background: #666;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div class="container">
+                <div class="logo">
+                    <img src="https://ncreatorsnext.pstatic.net/img/logo.a61f5142308413b313275c691aa13c9a.gif" alt="로고"
+                        width="40" class="PcGnb__image_logo___100z7">
+                    <div class="logo">
+                        <span>NAVER<br>INFLUENCER CENTER</span>
+                    </div>
+                </div>
+                <ul>
+                    <li>인플루언서 안내</li>
+                    <li>광고수익 혜택</li>
+                    <li>성장 지원 프로그램</li>
+                    <li>브랜드커넥트</li>
+                    <li>공지</li>
+                </ul>
+                <div class="log">
+                    <div>인플루언서 로그인</div>
+                </div>
+            </div>
+        </header>
+        <div id="nav">
+            <ul>
+                <li>크리에이터 워크숍</li>
+                <li>슈퍼매드</li>
+                <li>엑스퍼트 컨설팅</li>
+                <li>멤버십 혜택</li>
+                <li>어워드</li>
+            </ul>
+        </div>
+        <section id="banner">
+            <p>엑스퍼트 컨설팅</p>
+            <div class="banner-m">
+                <h2>
+                    법률 세무부터 동영상 제작까지!<br>
+                    지식iN 엑스퍼트 상담, 클래스 이용을 지원합니다.
+                </h2>
+            </div>
+            <div class="banner-s">혼자서는 해결하기 어려웟던 문제들, <br> 1인 최대 10만원의 엑스퍼트 쿠폰으로 전문가의 도움을 받아보세요. <br>
+            </div>
+            <div class="banner-y">지급 조건 상세 보기</div>
+            <div class="banner-c">내 eXpert 쿠폰 확인하기</div>
+        </section>
+        <section id="contents">
+            <div class="continner">
+                <div class="img1"><img src="img/cont1.png" alt="이미지1" width="500px"></div>
+                <div class="m-box">
+                    <div class="box">
+                        <div>
+                            <p>
+                                저 이미지 쓰고 싶은데<br>
+                                <strong class="line1">
+                                    저작권에 문제 없을까요?
+                                </strong>
+                            </p>
+                        </div>
+                        <div>
+                            <p class="blue"> 법률 상담 받기 &gt; </p>
+                        </div>
+                </div>
+                    <div class="box">
+                        <div>
+                            <p>
+                            <strong>
+                                광고 수익에 대한 세금 신고<br>
+                            </strong>
+                                    꼭 해야하나요? 어떻게 하죠?
+                                
+                            </p>
+                        </div>
+                        <div>
+                            <p class="blue"> 세무 상담 받기 &gt; </p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div>
+                            <p>
+                                영상 콘텐츠 만들고 싶은데,<br>
+                                동영상 제작을 배우고 싶어요!
+                            </p>
+                        </div>
+                        <div>
+                            <p class="blue"> 법률 상담 받기 &gt; </p>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <footer id="footer"></footer>
+    </div>
+</body>
+
+</html>

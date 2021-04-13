@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        #warp {}
+        #main {
+            width: 1200px;
+            margin: 0 auto;
+        }
+        header {
+            height: 100px;
+            background: #000;
+        }
+        .sec1 {
+            height: 300px;
+            background: #999;
+        }
+        .sec2 {
+            overflow: hidden;
+        }
+        .sec2-1 {
+            width: 30%;
+            height: 400px;
+            background: #888;
+            float: left;
+        }
+        .sec2-2 {
+            width: 70%;
+            height: 200px;
+            background: #777;
+            float: left;
+        }
+        .sec2-3 {
+            width: 70%;
+            height: 200px;
+            background: #666;
+            float: left;
+        }
+        .sec3 {
+            overflow: hidden;
+        }
+        .sec3-1 {
+            width: 33.333%;
+            height: 200px;
+            background: #555;
+            float: left;
+        }
+        .sec3-2 {
+            width: 33.333%;
+            height: 200px;
+            background: #444;
+            float: left;
+        }
+        .sec3-3 {
+            width: 33.333%;
+            height: 200px;
+            background: #333;
+            float: left;
+        }
+        .sec4 {
+            height: 300px;
+            background: #222;
+        }
+        article {
+            width: 23%;
+            height: 200px;
+            margin: 1%;
+            margin-top: 1%;
+            float: left;
+            background: #c8c;
+        }
+        footer {
+            height: 100px;
+            background: #111;
+        }
+        @media (max-width: 1220px) {
+
+        #main {
+            width: 100%;
+        }
+        article {
+            width: 31%;
+        }
+        article:last-child {
+            width: 0;
+            height: 0;
+            display: none;
+        }
+        .sec3-1 {
+            width: 50%;
+            height: 200px;
+            background: #555;
+            float: left;
+        }
+        .sec3-2 {
+            width: 50%;
+            height: 200px;
+            background: #444;
+            float: left;
+        }
+        .sec3-3 {
+            width: 0%;
+            height: 0;
+            display: none;
+        }   
+        }
+        @media (max-width: 800px) {
+
+        
+        .sec3-1 {
+            width: 100%;
+        }
+        .sec3-2 {
+            width: 100%;
+        }
+        }
+
+        @media (max-width: 500px) {
+        .sec2-1 {
+            width: 100%;
+        }
+        .sec2-2 {
+            width: 100%;
+        }
+        .sec2-3 {
+            width: 100%;
+        }
+        .sec4 {
+            height: 700px;
+        }
+        article {
+            width: 80%;
+            margin-top: 10%;
+            margin-left: 10%;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div id="warp">
+        <main id="main">
+            <header></header>
+            <section class="sec1"></section>
+            <section class="sec2">
+                <section class="sec2-1"></section>
+                <section class="sec2-2"></section>
+                <section class="sec2-3"></section>
+            </section>
+            <section class="sec3">
+                <section class="sec3-1"></section>
+                <section class="sec3-2"></section>
+                <section class="sec3-3"></section>
+            </section>
+            <section class="sec4">
+                <article></article>
+                <article></article>
+                <article></article>
+                <article></article>
+            </section>
+            <footer></footer>
+        </main>
+    </div>
+    
+</body>
+</html>

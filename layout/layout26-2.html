@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAVER</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        li {
+            list-style: none;
+            display: inline;
+            margin: 1%;
+        }
+        #wrap {
+        }
+        #header {
+            height: 100px;
+        }
+        .head1 {
+            margin: 0 auto;
+            width: 1200px;
+            height: inherit;
+            background: #fff;
+            position: relative;
+            overflow: hidden;
+            
+        }
+        .head1 img {
+            position: absolute;
+            top: 20px;
+            left: 10px;
+        }
+        .head1 .logo {
+            padding: 20px 60px;
+            width: 17%;
+            height: 100px;
+            float: left;
+            font-weight: bold;
+        }
+        .head1 .menu {
+            font-size: 14px;
+            width: 50%;
+            padding-top: 40px;
+            height: 100px;
+            text-align: center;
+            float: left;
+        }
+        .head1 .log {
+            font-size: 14px;
+            width: 20%;
+            padding-top: 40px;
+            margin-left: 30px;
+            height: 100px;
+            float: left;
+        }
+        .head1 .log span {
+            background: #fff;
+            border: 1px solid;
+            border-radius: 15px;
+            padding: 5px 5px;
+        }
+
+        #banner {
+            height: 500px;
+        }
+        .ban1 {
+            width: 100%;
+            margin: 0 auto;
+            height: inherit;
+            background: url(img/banner-bg2.png) no-repeat center center;
+            background-size: cover;
+            color: white;
+            text-align: center;
+            padding-top: 7%;
+        }
+        #banner .ban1 > div:first-child {
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+        #banner .ban1 > div:last-child {
+            font-size: 40px;
+        }
+        #content {
+            height: 1400px;
+            background: #fff;
+        }
+        #content .content-1 {
+            margin: 0 auto;
+            width: 1200px;
+            height: inherit;
+            background: #fff;
+        }
+        .cont1 {
+            text-align: center;
+        }
+        .cont1 span {
+            font-size: 14px;
+            background: #ccc;
+            padding: 5px 10px;
+            border-radius: 20px;
+        }
+        #content .content-1 .cont1 div:first-child {
+            padding-top: 80px;
+            padding-bottom: 20px;
+        }
+        #content .content-1 .cont1 div:nth-child(2) {
+            font-weight: bold;
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+        .cont2 {
+            overflow: hidden;
+        }
+        .cont2 > div:first-child {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .cont2 .box1 {
+            width: 400px;
+            height: 400px;
+            overflow: hidden;
+            float: left;
+            margin-left: 15%;
+            color: white;
+        }
+        .cont2 .box1-1 {
+            width: 400px;
+            height: 180px;
+            border-radius: 20px;
+            background: #5c6bc0;
+            float: left;
+            margin-bottom: 3%;
+            position: relative;
+            overflow: hidden;
+        }
+        .box1-1 img {
+            position: absolute;
+            top: 45px;
+            right: -40px;
+            opacity: 80%;
+        }
+        .cont2 .box1-2 {
+            width: 400px;
+            height: 180px;
+            border-radius: 20px;
+            background: #5c6bc0;
+            float: left;
+            margin-top: 3%;
+            position: relative;
+            overflow: hidden;
+        }
+        .box1-2 img {
+            position: absolute;
+            top: 45px;
+            right: -10px;
+        }
+        .cont2 .box2 {
+            width: 400px;
+            height: 385px;
+            border-radius: 20px;
+            background: #5c6bc0 ;
+            float: left;
+            margin-left: 2%;
+            color: white;
+            position: relative;
+        }
+        .box2 img {
+            position: absolute;
+            bottom: 0;
+            right: 25px;
+        }
+        #footer {
+            height: 100px;
+            background: #333;
+        }
+        .fot1 {
+            text-align: center;
+            margin: 0 auto;
+            width: 1200px;
+            height: inherit;
+            background: #333;
+        }
+        .fot1 .top {
+            padding-top: 10px;
+            font-size: 12px;
+            color: #fff;
+            opacity: 50%;
+            margin-bottom: 20px;
+        }
+        .fot1 .log2 {
+            margin-bottom: 10px;
+        }
+        .fot1 .log2 span {
+            background: #555;
+            color: #fff;
+            border-radius: 5px;
+            padding: 5px 15px;
+        }
+        .fot1 .mark {
+            color: #fff;
+            font-weight: bold;
+            opacity: 50%;
+        }
+
+        .box-title {
+            margin: 20px 20px;
+            opacity: 80%;
+        }
+        .box-info {
+            font-weight: bold;
+            font-size: 20px;
+            margin-left: 20px;
+        }
+        .box-more {
+            margin: 20px 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div class="head1">
+                <img src="https://ncreatorsnext.pstatic.net/img/logo.a61f5142308413b313275c691aa13c9a.gif" alt="" width="40" class="PcGnb__image_logo___100z7">
+                <div class="logo"><span>NAVER<br>INFLUENCER CENTER</span>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li>인플루언서 안내</li>
+                    <li>광고수익 혜택</li>
+                    <li>성장 지원 프로그램</li>
+                    <li>브랜드커넥트</li>
+                    <li>공지</li>
+                </ul>
+            </div>
+            <div class="log"><span>인플루언서 로그인</span></div>
+        </header>
+        <section id="banner">
+            <div class="ban1">
+                <div>광고수익 혜택</div>
+                <div>인플루언서의 수익을 더 높여줄<br>특별한 광고가 제공됩니다.</div>
+            </div>
+        </section>
+        <section id="content">
+            <div class="content-1">
+                <article class="cont1">
+                    <div><span>NEW</span></div>
+                    <div>더 커진 수익과 효과적인 노출<br>새롭고 강력한 헤드뷰 광고를 선보입니다.</div>
+                    <img src="img/content-img1.png" alt="이미지1" width="800">
+                </article>
+                <article class="cont2">
+                    <div>새로운 헤드뷰 광고 상품은 콘텐츠에 방해되지 않으면서도<br>
+                    뛰어난 노출과 수익을 제공하는 신규 광고입니다<br>
+                    네이버에서 적극적인 창작 활동을 통해 더 좋아진 혜택을 경험해 보세요.</div>
+                    <div class="box1">
+                        <div class="box1-1">
+                            <div class="box-title">인플루언서 대상</div>
+                            <div class="box-info">인플루언서 홈 영역에<br>일반 광고 제공</div>
+                            <div class="box-more">자세히 알아보기 &rarr;</div>
+                            <img src="img/cont2-img2.png" alt="박스이미지1" width="200px">
+                        </div>
+                        <div class="box1-2">
+                            <div class="box-title">상위 인플루언서 대상</div>
+                            <div class="box-info">더 높은 수익의<br>프리미엄 광고 제공</div>
+                            <div class="box-more">자세히 알아보기 &rarr;</div>
+                            <img src="img/cont2-img1.png" alt="박스이미지2" width="200px">
+                        </div>
+                    </div>
+                    <div class="box2">
+                        <<div class="box-title">우수 인플루언서 대상</div>
+                        <div class="box-info">다양한 브랜드와 연결될 수 있는<br>브랜드 커넥트 제공</div>
+                        <div class="box-more">자세히 알아보기 &rarr;</div>
+                        <img src="img/cont2-img3.png" alt="박스이미지3" width="350px">
+                    </div>
+                </article>
+            </div>
+        </section>
+        <footer id="footer">
+            <div class="fot1">
+                <div class="top">TOP &uarr; </div>
+                <div class="log2"><span>로그인</span></div>
+                <div class="mark">NAVER</div>
+            </div>
+        </footer>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>javascript</title>
+  <style>
+    * { /* 여백 초기화 */
+      padding: 0;
+      margin: 0;
+    }
+    #warp {
+      width: 100%
+    }
+    #header {
+      width: 100%;
+      height: 100px;
+      background-color: #ffebee;
+    }
+    #contents {
+      width: 100%;
+      height: 2000px;
+      background-color: #ffcdd2;
+    }
+    #contents #cont1 {
+      width: 100%;
+      height: 1000px;
+      background-color: #e57373;
+    }
+    #contents #cont2 {
+      width: 100%;
+      height: 500px;
+      background-color: #ef5350;
+    }
+    #contents #cont3 {
+      width: 100%;
+      height: 500px;
+      background-color: #e53935;
+    }
+    
+    #footer {
+      width: 100%;
+      height: 100px;
+      background-color: #ef9a9a;
+    }
+    .container {
+      width: 1600px;
+      height: inherit;
+      background-color: rgba(0,0,0,0.4);
+      margin: 0 auto; /*위 아래는 0픽셀, 왼쪽 오른쪽은 auto*/
+    }
+
+  </style>
+</head>
+<body>
+  <div id="warp">
+    <header id="header">
+        <div class="container"></div>    
+    </header>
+    <section id="contents">
+      <section id="cont1">
+        <div class="container"></div>  
+      </section>
+      <section id="cont2">
+        <div class="container"></div>  
+      </section>
+      <section id="cont3">
+        <div class="container"></div>  
+      </section>
+    </section>
+    <footer id="footer">
+      <div class="container"></div>    
+    </section>
+  </div> 
+  
+</body>
+</html>
